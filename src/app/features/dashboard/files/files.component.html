@@ -1,0 +1,5 @@
+<h1 class="text-3xl mb-5 dark:text-white">Files</h1>
+
+@for (file of this.files$ | async; track file.name) {
+  <app-file-entry [file]="file" (deleted)="onDeleted($event)"/>
+}
