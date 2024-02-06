@@ -4,11 +4,12 @@ import { AsyncPipe, NgForOf } from '@angular/common';
 import { File } from '../../../shared/models/File';
 import { FileEntryComponent } from './file-entry/file-entry.component';
 import { Observable } from 'rxjs';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-files',
   standalone: true,
-  imports: [NgForOf, FileEntryComponent, AsyncPipe],
+  imports: [NgForOf, FileEntryComponent, AsyncPipe, RouterOutlet],
   templateUrl: './files.component.html',
   styleUrl: './files.component.scss'
 })

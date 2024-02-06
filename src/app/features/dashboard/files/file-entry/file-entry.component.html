@@ -13,7 +13,7 @@
     </div>
     @if (isHovered) {
       <div class="inline-flex items-center text-base font-semibold text-gray-400 space-x-1.5 pr-5">
-        <a [routerLink]="['/files/view', this.file?.name]" class="text-gray-500 dark:text-white cursor-pointer">View</a>
+        <a [routerLink]="['/dashboard/files/', this.file?.name]" class="text-gray-500 dark:text-white cursor-pointer">View</a>
         <a class="text-gray-500 cursor-default"> | </a>
         <a [routerLink]="" (click)="onDelete()" class="text-red-500 cursor-pointer">Delete</a>
       </div>

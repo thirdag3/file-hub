@@ -3,11 +3,11 @@ import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 
 @Component({
-  selector: 'app-view-file',
-  standalone: true,
-  imports: [],
-  templateUrl: './view-file.component.html',
-  styleUrl: './view-file.component.scss'
+    selector: 'app-view-file',
+    standalone: true,
+    templateUrl: './view-file.component.html',
+    styleUrl: './view-file.component.scss',
+    imports: []
 })
 export class ViewFileComponent implements OnInit, OnDestroy {
   private routeSubscription?: Subscription;
